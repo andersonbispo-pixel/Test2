@@ -1,35 +1,89 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-  <meta charset="UTF-8">
-  <title>Feliz Dia dos Namorados</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+  <title>Cartão de Crédito Itaú</title>
   <style>
-
-<div class="credit-card">
-  <div class="card-front">
-    <div class="card-logo">
-      <!-- Insira aqui o logotipo do banco -->
+    .credit-card {
+      width: 350px;
+      height: 200px;
+      background-color: #00447b;
+      border-radius: 10px;
+      padding: 20px;
+      perspective: 1000px;
+    }
+    
+    .card-front, .card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      transition: transform 0.6s;
+    }
+    
+    .card-back {
+      transform: rotateY(180deg);
+    }
+    
+    .credit-card:hover .card-front {
+      transform: rotateY(180deg);
+    }
+    
+    .credit-card:hover .card-back {
+      transform: rotateY(0deg);
+    }
+    
+    .card-logo img {
+      max-width: 100px;
+    }
+    
+    .card-number {
+      font-family: Arial, sans-serif;
+      font-size: 18px;
+      color: #fff;
+      margin-bottom: 15px;
+    }
+    
+    .card-holder {
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+      color: #fff;
+      margin-bottom: 10px;
+    }
+    
+    .card-expiry {
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+      color: #fff;
+    }
+    
+    .card-cvv {
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <div class="credit-card">
+    <div class="card-front">
+      <div class="card-logo">
+        <img src="caminho/do/logotipo-do-itau.png" alt="Logotipo Itaú">
+      </div>
+      <div class="card-number">
+        1234 5678 9012 3456
+      </div>
+      <div class="card-holder">
+        NOME DO TITULAR
+      </div>
+      <div class="card-expiry">
+        12/24
+      </div>
     </div>
-    <div class="card-number">
-      <!-- Insira aqui o número do cartão -->
-    </div>
-    <div class="card-holder">
-      <!-- Insira aqui o nome do titular do cartão -->
-    </div>
-    <div class="card-expiry">
-      <!-- Insira aqui a data de validade do cartão -->
+    <div class="card-back">
+      <div class="card-cvv">
+        123
+      </div>
     </div>
   </div>
-  <div class="card-back">
-    <div class="card-cvv">
-      <!-- Insira aqui o código CVV do cartão -->
-    </div>
-  </div>
-</div>
-
 </body>
-
 </html>
