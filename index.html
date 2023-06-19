@@ -2,66 +2,7 @@
 <html>
 <head>
   <title>Cartão de Crédito Itaú</title>
-  <style>
-    .credit-card {
-      width: 350px;
-      height: 200px;
-      background-color: #00447b;
-      border-radius: 10px;
-      padding: 20px;
-      perspective: 1000px;
-    }
-    
-    .card-front, .card-back {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      backface-visibility: hidden;
-      transition: transform 0.6s;
-    }
-    
-    .card-back {
-      transform: rotateY(180deg);
-    }
-    
-    .credit-card:hover .card-front {
-      transform: rotateY(180deg);
-    }
-    
-    .credit-card:hover .card-back {
-      transform: rotateY(0deg);
-    }
-    
-    .card-logo img {
-      max-width: 100px;
-    }
-    
-    .card-number {
-      font-family: Arial, sans-serif;
-      font-size: 18px;
-      color: #fff;
-      margin-bottom: 15px;
-    }
-    
-    .card-holder {
-      font-family: Arial, sans-serif;
-      font-size: 16px;
-      color: #fff;
-      margin-bottom: 10px;
-    }
-    
-    .card-expiry {
-      font-family: Arial, sans-serif;
-      font-size: 16px;
-      color: #fff;
-    }
-    
-    .card-cvv {
-      font-family: Arial, sans-serif;
-      font-size: 16px;
-      color: #fff;
-    }
-  </style>
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
   <div class="credit-card">
@@ -70,18 +11,18 @@
         <img src="caminho/do/logotipo-do-itau.png" alt="Logotipo Itaú">
       </div>
       <div class="card-number">
-        1234 5678 9012 3456
+        <span>1234 5678 9012 3456</span>
       </div>
       <div class="card-holder">
-        NOME DO TITULAR
+        <span>NOME DO TITULAR</span>
       </div>
       <div class="card-expiry">
-        12/24
+        <span>12/24</span>
       </div>
     </div>
     <div class="card-back">
       <div class="card-cvv">
-        123
+        <span>123</span>
       </div>
     </div>
   </div>
