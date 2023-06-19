@@ -66,6 +66,9 @@ body {
   font-weight: bold;
   color: #fff;
   padding: 15px;
+  letter-spacing: 2px;
+  word-spacing: 8px;
+  font-family: 'Roboto Mono', monospace;
 }
 
 .card-holder, .card-expiry {
@@ -85,29 +88,6 @@ body {
 .card-cvv {
   font-size: 16px;
   color: #fff;
-  padding: 15px;
-  text-align: right;
-}
-
-.credit-card span {
-  display: inline-block;
-}
-
-.credit-card::before, .credit-card::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(255, 255, 255, 0.1);
-}
-
-.credit-card::before {
-  left: -25%;
-  transform: skewX(-30deg);
-}
-
-.credit-card::after {
-  right: -25%;
-  transform: skewX(30deg);
+  letter-spacing: 1px;
+  font-family: 'Roboto Mono', monospace;
 }
